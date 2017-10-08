@@ -1,0 +1,6 @@
+## Ignore files
+*.sln
+*.suo
+[Dd]ebug/
+[Rr]elease/
+NoobRoadMike/NoobRoadMike.vcxproj*
