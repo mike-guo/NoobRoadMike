@@ -1,3 +1,4 @@
+#include "common.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -9,7 +10,9 @@ void print_str(string str) {cout << str << endl;};
 
 
 int main() {
-
+	//cout << hex << (0xffffffff >> 16) << endl;
+	Didi_test();
+	system("pause");
 	return 0;
 }
 
