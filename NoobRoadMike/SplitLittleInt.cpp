@@ -3,7 +3,7 @@
 int x[1024] = { 0 };	// x[]用于存储解
 int total = 0;			// total用于计数拆分的方法数
 
-void splitN(int n, int m)  {	//n是需要拆分的数，m是拆分的进度
+void splitN(int n, int m) {		//n是需要拆分的数，m是拆分的进度
 	int rest, i, j;
 	for (i = 1; i <= n; i++) {	//从1开始尝试拆分
 		if (i >= x[m - 1]) {		//拆分的数大于或等于前一个从而保证不重复
@@ -25,8 +25,7 @@ void splitN(int n, int m)  {	//n是需要拆分的数，m是拆分的进度
 	}
 }
 
-void SplitLittleInt_test()
-{
+void SplitLittleInt_test() {
 	int n ;
 	printf("please input the natural number n:");
 	scanf("%d", &n);

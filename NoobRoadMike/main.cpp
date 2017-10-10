@@ -1,83 +1,32 @@
-#include "common.h"
 #include <iostream>
 #include <vector>
 #include <string>
 #include <algorithm>
 using namespace std;
 
-void print_int(int x) {cout << x << " ";};
-void print_str(string str) {cout << str << endl;};
+
+// Func_test Declaration
+void ClassTest_test();
+void Sort_test();
+void SplitString_test();
+void FullPerm_test();
+void SplitLittleInt_test();
+void Didi_test();
 
 
+// Main Function Entry
 int main() {
-	//cout << hex << (0xffffffff >> 16) << endl;
-	Didi_test();
+	//ClassTest_test();
+	//Sort_test();
+	//SplitString_test();
+	//FullPerm_test();
+	//SplitLittleInt_test();
+	//Didi_test();
+	
 	system("pause");
 	return 0;
 }
 
-
-
-void swap_int(int& a, int& b) {
-	int tmp = a;
-	a = b;
-	b = tmp;
-}
-
-void FullPerm(int* arr, int head, int tail) {
-	if (head == tail) {
-		for_each(arr, arr + 4, print_int);
-		cout << endl;
-		return;
-	}
-	for (int i = head; i <= tail; i++) {
-		swap_int(arr[head], arr[i]);
-		//cout << "FullPrem" << endl;
-		FullPerm(arr, head + 1, tail);
-		swap_int(arr[head], arr[i]);
-	}
-}
-
-//int main() {
-//	int arr[4] = { 1, 2, 3, 4 };
-//	//cout << "FullPerm" << endl;
-//	FullPerm(arr, 0, 3);
-//	system("pause");
-//	return 0;
-//}
-
-
-//int main() {
-//	int arr[3] = {2, 1, 3};
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	sort(arr, arr+3);
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//	
-//	cout << next_permutation(arr, arr+3) << '\n';
-//	cout << arr[0] << ' ' << arr[1] << ' ' << arr[2] << endl;
-//
-//	system("pause");
-//	return 0;
-//}
 
 
 int canArrangeWords(int num,char** arr){

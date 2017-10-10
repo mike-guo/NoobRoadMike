@@ -5,9 +5,9 @@ class A {
 private:
 	int _a;
 public:
-	A() : _a(1) { cout << "A()" << endl; }
-	~A() { cout << "~A()" << endl; }
-	void print() { cout << _a << endl; }
+	A() : _a(1)  { cout << "A()" << endl; }
+	~A()  { cout << "~A()" << endl; }
+	void print()  { cout << _a << endl; }
 };
 
 class B : public A {
@@ -41,6 +41,4 @@ void ClassTest_test() {
 
 
 	cout << Double(3, 4) * Double(3, 4) << endl;
-
-	system("pause");
 }
