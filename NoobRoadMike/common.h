@@ -4,5 +4,5 @@
 #include <string>
 using namespace std;
 
-void print_int(int x);
-void print_str(string str);
+inline void print_int(int x)  { cout << x << " "; };
+inline void print_str(string str)  { cout << str << endl; };
