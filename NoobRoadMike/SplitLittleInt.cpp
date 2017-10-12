@@ -27,8 +27,10 @@ void splitN(int n, int m) {		//n是需要拆分的数，m是拆分的进度
 
 void SplitLittleInt_test() {
 	int n ;
-	printf("please input the natural number n:");
+	printf("Please input the natural number n:");
 	scanf("%d", &n);
+	total = 0;
+	memset(x, 0, 1024);
 	splitN(n, 1);
 	printf("There are %d ways to split natural number %d. \n", total, n);
 }
