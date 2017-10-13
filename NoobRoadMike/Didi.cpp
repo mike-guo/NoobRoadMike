@@ -9,7 +9,7 @@ struct range {
 	unsigned int right;
 };
 
-void Didi_test() {  // 滴滴笔试：CIDR路由协议IP地址去重
+void Didi_test1() {  // 滴滴笔试：CIDR路由协议IP地址去重
 	int n;
 	cin >> n;
 	vector<string> res;
@@ -60,4 +60,41 @@ void Didi_test() {  // 滴滴笔试：CIDR路由协议IP地址去重
 	for (int i = 0; i < res.size(); i++) {
 		cout << res[i] << endl;
 	}
+}
+
+void print_subset(int * arr, int index, int num) {
+	if (index < 0)  return;
+	if (index == 0) {
+		if (num)  cout << arr[index] << ' ' << num << endl;
+		else  cout << arr[index] << endl;
+		return;
+	}
+	print_subset(arr, index - 1, num);
+	if (num)  cout << arr[index] << ' ' << num << endl;
+	else  cout << arr[index] << endl;
+	print_subset(arr, index - 1, arr[index]);
+}
+
+void Didi_test2() {  // 滴滴面试：输出所有子集
+	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	int len = 5;
+	cout << '-' << endl;
+
+	// 思路1：递归求解（失败了。。）
+	//print_subset(arr, 3, 0);
+
+	// 思路2：利用2^n按位输出
+	int lp = 1 << len;
+	for (int i = 1; i <= lp; i++) {
+		for (int j = 0; j < len; j++) {
+			if (i & (1 << j))
+				cout << arr[j] << ' ';
+		}
+		cout << endl;
+	}
+}
+
+void Didi_test() {
+	//Didi_test1();
+	Didi_test2();
 }

@@ -23,9 +23,9 @@ int main() {
 	//SplitString_test();
 	//FullPerm_test();
 	//SplitLittleInt_test();
-	//Didi_test();
+	Didi_test();
 	//LCS_test();
-	SenseTime_test();
+	//SenseTime_test();
 
 	system("pause");
 	return 0;
