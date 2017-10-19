@@ -14,6 +14,7 @@ void SplitLittleInt_test();
 void Didi_test();
 void LCS_test();
 void SenseTime_test();
+void Toutiao_test();
 
 
 // Main Function Entry
@@ -23,9 +24,10 @@ int main() {
 	//SplitString_test();
 	//FullPerm_test();
 	//SplitLittleInt_test();
-	Didi_test();
+	//Didi_test();
 	//LCS_test();
 	//SenseTime_test();
+	Toutiao_test();
 
 	system("pause");
 	return 0;
