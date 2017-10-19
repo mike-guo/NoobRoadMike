@@ -15,6 +15,7 @@ void Didi_test();
 void LCS_test();
 void SenseTime_test();
 void Toutiao_test();
+void CCBFund_test();
 
 
 // Main Function Entry
@@ -22,12 +23,13 @@ int main() {
 	//ClassTest_test();
 	//Sort_test();
 	//SplitString_test();
-	FullPerm_test();
+	//FullPerm_test();
 	//SplitLittleInt_test();
 	//Didi_test();
 	//LCS_test();
 	//SenseTime_test();
 	//Toutiao_test();
+	CCBFund_test();
 
 	system("pause");
 	return 0;
