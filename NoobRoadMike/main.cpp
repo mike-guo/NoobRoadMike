@@ -16,6 +16,7 @@ void LCS_test();
 void SenseTime_test();
 void Toutiao_test();
 void CCBFund_test();
+void Group58_test();
 
 
 // Main Function Entry
@@ -29,7 +30,8 @@ int main() {
 	//LCS_test();
 	//SenseTime_test();
 	//Toutiao_test();
-	CCBFund_test();
+	//CCBFund_test();
+	Group58_test();
 
 	system("pause");
 	return 0;
